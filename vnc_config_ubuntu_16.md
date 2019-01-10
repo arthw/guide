@@ -1,11 +1,14 @@
 # You will see a gray window in VNC viewer and there is no terminal and window-manager.
 
 # Method
-
+'''
 vi .vnc/xstartup
+'''
 
+'''
 sudo apt-get install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal
-
+'''
+'''
 #!/bin/sh
 
 #Uncomment the following two lines for normal desktop:
@@ -22,3 +25,4 @@ gnome-panel &
 gnome-settings-daemon &
 metacity &
 nautilus &
+'''
