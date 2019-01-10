@@ -1,6 +1,6 @@
-#You will see a gray window in VNC viewer and there is no terminal and window-manager.
+# You will see a gray window in VNC viewer and there is no terminal and window-manager.
 
-#Method
+# Method
 
 vi .vnc/xstartup
 
@@ -8,9 +8,9 @@ sudo apt-get install gnome-panel gnome-settings-daemon metacity nautilus gnome-t
 
 #!/bin/sh
 
-# Uncomment the following two lines for normal desktop:
-# unset SESSION_MANAGER
-# exec /etc/X11/xinit/xinitrc
+#Uncomment the following two lines for normal desktop:
+#unset SESSION_MANAGER
+#exec /etc/X11/xinit/xinitrc
 
 [ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup
 [ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
