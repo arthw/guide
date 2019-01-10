@@ -1,5 +1,5 @@
 # You will see a gray window in VNC viewer and there is no terminal and window-manager.
-
+![GitHub Logo](img/gray_vnc.jpg)
 # Method
 Install gnome GUI tools:
 ```
