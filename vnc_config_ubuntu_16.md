@@ -50,8 +50,10 @@ Add
 
 Edit
 
-```#!/bin/bash
+```
+#!/bin/bash
 vncconfig -iconic &
 xrdb $HOME/.Xresources
-startxfce4 &```
+startxfce4 &
+```
 
