@@ -45,8 +45,9 @@ Add
 ### Install xfce4 terminal
 `sudo apt-get install xfce4-terminal`
 
-### startup xfce4 in vncserver
+### Startup xfce4 in vncserver
 `vi .vnc/xstartup`
+
 Edit
 
 ```#!/bin/bash
