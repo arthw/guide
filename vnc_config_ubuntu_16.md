@@ -34,5 +34,7 @@ nautilus &
 ### startup vncserver in reboot
 
 `crontab -e`
+
 Add
+
 `@reboot /usr/bin/vncserver :1`
