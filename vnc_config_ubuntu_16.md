@@ -38,3 +38,16 @@ nautilus &
 Add
 
 `@reboot /usr/bin/vncserver :1`
+
+### Install xfce4 terminal
+`sudo apt-get install xfce4-terminal`
+
+### startup xfce4 in vncserver
+`vi .vnc/xstartup`
+Edit
+
+```#!/bin/bash
+vncconfig -iconic &
+xrdb $HOME/.Xresources
+startxfce4 &```
+
