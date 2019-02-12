@@ -31,13 +31,16 @@ gnome-settings-daemon &
 metacity &
 nautilus &
 ```
-### startup vncserver in reboot
+### Start up vncserver in reboot
 
 `crontab -e`
 
 Add
 
 `@reboot /usr/bin/vncserver :1`
+
+### Install xfce4
+`sudo apt install xfce4 xfce4-goodies`
 
 ### Install xfce4 terminal
 `sudo apt-get install xfce4-terminal`
