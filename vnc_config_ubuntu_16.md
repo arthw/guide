@@ -1,7 +1,7 @@
-# There is no terminal and window-manager in VNC window.
+### There is no terminal and window-manager in VNC window.
 You will see a gray window in VNC viewer and there is no terminal and window-manager.
 ![VNC_err](img/gray_vnc.jpg)
-# Method
+### Method
 Install gnome GUI tools:
 ```
 sudo apt-get install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal
@@ -31,3 +31,8 @@ gnome-settings-daemon &
 metacity &
 nautilus &
 ```
+### startup vncserver in reboot
+
+`crontab -e`
+Add
+`@reboot /usr/bin/vncserver :1`
