@@ -59,5 +59,7 @@ startxfce4 &
 
 ### xfce4 in VNC tab is with problem
 Application-> Menu -> Setttings -> Windows Manager
+
 Select: Keyboard -> Switch window for same application
+
 Click 'Clear'
