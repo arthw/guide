@@ -13,6 +13,6 @@ ENV https_proxy $HTTP_PROXY
 ...
 
 
-docker build . -t openvino_jianyuzh \
+docker build . -t docker_image_name \
 --build-arg HTTP_PROXY=http://x.x.x.x:8888/ \
 --build-arg HTTPS_PROXY=http://x.x.x.x:8888/
