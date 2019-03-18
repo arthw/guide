@@ -40,7 +40,10 @@ Add
 `@reboot /usr/bin/vncserver :1`
 
 ### Install xfce4
-`sudo apt install xfce4 xfce4-goodies`
+```
+sudo apt install xfce4 xfce4-goodies
+sudo apt install autocutsel
+```
 
 ### Install xfce4 terminal
 `sudo apt-get install xfce4-terminal`
@@ -52,6 +55,7 @@ Edit
 
 ```
 #!/bin/bash
+autocutsel -fork &
 vncconfig -iconic &
 xrdb $HOME/.Xresources
 startxfce4 &
