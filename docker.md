@@ -22,3 +22,10 @@ docker build . -t docker_image_name \
 taskset -c -p $$
 pid 284307's current affinity list: 0-111
 ```
+
+### update run parameter
+```
+docker stop caffe
+docker update -c 512 caffe
+docker start caffe
+```
