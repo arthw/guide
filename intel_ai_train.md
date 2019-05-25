@@ -18,3 +18,10 @@ python -c "import tensorflow"
 ###download code###
 
 https://software.intel.com/sites/landingpage/ai_courses/dc_to_the_edge.zip
+
+conda env create  -f environment.yml
+
+pip install opencv-python==4.1.0.25  -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+
+
