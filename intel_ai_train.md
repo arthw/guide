@@ -22,6 +22,8 @@ https://software.intel.com/sites/landingpage/ai_courses/dc_to_the_edge.zip
 conda env create  -f environment.yml
 
 pip install opencv-python==4.1.0.25  -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install pygal  -i https://pypi.tuna.tsinghua.edu.cn/simple
 
+jupyter notebook --NotebookApp.token='' --ip=0.0.0.0
 
 
