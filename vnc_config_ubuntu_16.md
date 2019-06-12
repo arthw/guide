@@ -55,10 +55,14 @@ Edit
 
 ```
 #!/bin/bash
-autocutsel -fork &
+
+unset SESSION_MANAGER  
+unset DBUS_SESSION_BUS_ADDRESS  
 vncconfig -iconic &
-xrdb $HOME/.Xresources
-startxfce4 &
+startxfce4 &  
+[ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup  
+[ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources  
+xsetroot -solid grey  
 ```
 
 ### xfce4 in VNC tab is with problem
