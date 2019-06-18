@@ -12,3 +12,9 @@ Then copy and paste below texts
 trusted-host=mirrors.douban.com
 index-url=https://pypi.douban.com/simple/
 ```
+
+### Set Local Mirror
+
+```
+pip install pygame -i https://pypi.tuna.tsinghua.edu.cn/simple 
+```
