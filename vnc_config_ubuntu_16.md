@@ -59,6 +59,7 @@ Edit
 unset SESSION_MANAGER  
 unset DBUS_SESSION_BUS_ADDRESS  
 vncconfig -iconic &
+autocutsel -fork
 startxfce4 &  
 [ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup  
 [ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources  
