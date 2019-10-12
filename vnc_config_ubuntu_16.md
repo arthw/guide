@@ -41,12 +41,8 @@ Add
 
 ### Install xfce4
 ```
-sudo apt install xfce4 xfce4-goodies
-sudo apt install autocutsel
+sudo apt install xfce4 xfce4-goodies autocutsel xfce4-terminal
 ```
-
-### Install xfce4 terminal
-`sudo apt-get install xfce4-terminal`
 
 ### Startup xfce4 in vncserver
 `vi .vnc/xstartup`
