@@ -16,7 +16,7 @@ index-url=https://pypi.douban.com/simple/
 ### Set Local Mirror
 
 ```
-pip install pygame -i https://pypi.tuna.tsinghua.edu.cn/simple 
+pip install pygame -i https://pypi.tuna.tsinghua.edu.cn/simple  --default-timeout=100 
 ```
 
 ### Set local mirror in Windows
