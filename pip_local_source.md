@@ -27,6 +27,11 @@ pip install pygame -i https://pypi.tuna.tsinghua.edu.cn/simple  --default-timeou
 
 (3):在新建的pip.ini文件中输入以下内容，搞定文件路径："C:\Users\Administrator\AppData\Roaming\pip\pip.ini"
 
+
+"C:\Users\Administrator\AppData\Roaming\pip\pip.ini"
+or
+"C:\Users\xxx\pip\pip.ini"
+
     [global]
     timeout = 6000
     index-url = http://pypi.douban.com/simple
