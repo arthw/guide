@@ -21,3 +21,12 @@ python3 -m pip install -U --user keras_preprocessing==1.0.5 --no-deps
 
 #### Install TF by PIP
 `python3 -m pip install /tmp/tensorflow_pkg/tensorflow-XXX.whl`
+
+#### Install bazel for special release for old TF build
+```
+$ BAZEL_VERSION="0.26.0"     # insert your desired version here, for example 0.26.0
+$ wget https://github.com/bazelbuild/bazel/releases/download/${BAZEL_VERSION}/bazel-${BAZEL_VERSION}-installer-linux-x86_64.sh   # if not on x86_64, change that too
+$ chmod +x bazel-${BAZEL_VERSION}-installer-linux-x86_64.sh   # or the file you just downloaded
+$ ./bazel-${BAZEL_VERSION}-installer-linux-x86_64.sh
+$ bazel version   # this should now print the same as BAZEL_VERSION
+```
