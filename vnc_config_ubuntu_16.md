@@ -68,3 +68,9 @@ Application-> Menu -> Setttings -> Windows Manager
 Select: Keyboard -> Switch window for same application
 
 Click 'Clear'
+
+
+### minimize maximize buttons missing tightenvnc Ubuntu 20.04
+Download xfwm4_4.14.5-1_amd64.deb from https://launchpad.net/ubuntu/groovy/amd64/xfwm4/4.14.5-1
+sudo dpkg -i xfwm4_4.14.5-1_amd64.deb
+reboot
