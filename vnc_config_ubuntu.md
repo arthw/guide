@@ -69,11 +69,14 @@ Select: Keyboard -> Switch window for same application
 
 Click 'Clear'
 
+### set xfce terminal as default --support copy/paste
+sudo update-alternatives --config x-terminal-emulator
 
 ### minimize maximize buttons missing tightenvnc Ubuntu 20.04
 
 Download xfwm4_4.14.5-1_amd64.deb from https://launchpad.net/ubuntu/groovy/amd64/xfwm4/4.14.5-1
 ```
+wget http://launchpadlibrarian.net/494460182/xfwm4_4.14.5-1_amd64.deb
 sudo dpkg -i xfwm4_4.14.5-1_amd64.deb
 reboot
 ```
