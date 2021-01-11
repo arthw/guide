@@ -41,7 +41,7 @@ Add
 
 ### Install xfce4
 ```
-sudo apt install xfce4 xfce4-goodies autocutsel xfce4-terminal
+sudo apt install xfce4 xfce4-goodies autocutsel xfce4-terminal xfonts-100dpi xfonts-75dpi
 ```
 
 ### Startup xfce4 in vncserver
