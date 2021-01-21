@@ -80,3 +80,8 @@ wget http://launchpadlibrarian.net/494460182/xfwm4_4.14.5-1_amd64.deb
 sudo dpkg -i xfwm4_4.14.5-1_amd64.deb
 reboot
 ```
+
+### set xfce terminal
+```
+sudo update-alternatives --config x-terminal-emulator
+```
