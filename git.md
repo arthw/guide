@@ -1,3 +1,6 @@
+### Remove tailed space in file
+sed -i 's/[[:space:]]*$//' FILE
+
 ### Syncing a fork
 Sync a fork of a repository to keep it up-to-date with the upstream repository.
 
