@@ -31,6 +31,11 @@ gnome-settings-daemon &
 metacity &
 nautilus &
 ```
+
+### startup vncserver
+
+`vncserver -localhost no  -geometry 1680x900`
+
 ### Start up vncserver in reboot
 
 `crontab -e`
