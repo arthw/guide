@@ -1,3 +1,11 @@
+### set proxy in docker
+```
+vi /etc/systemd/system/docker.service.d/http-proxy.conf
+vi /etc/systemd/system/docker.service.d/https-proxy.conf
+
+[Service]
+Environment="HTTPS_PROXY=http://xxx.xxx.com:999/"
+```
 ### get clean ubuntu 16 ###
 ```
 docker pull ubuntu:16.04
