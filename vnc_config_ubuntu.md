@@ -34,7 +34,7 @@ nautilus &
 
 ### startup vncserver
 
-`vncserver -localhost no  -geometry 1680x900`
+`vncserver -localhost no -geometry 1400x760`
 
 ### Start up vncserver in reboot
 
