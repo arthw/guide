@@ -1,4 +1,4 @@
-### set proxy in docker
+### Set proxy in docker
 ```
 vi /etc/systemd/system/docker.service.d/http-proxy.conf
 vi /etc/systemd/system/docker.service.d/https-proxy.conf
@@ -6,13 +6,13 @@ vi /etc/systemd/system/docker.service.d/https-proxy.conf
 [Service]
 Environment="HTTPS_PROXY=http://xxx.xxx.com:999/"
 ```
-### get clean ubuntu 16 ###
+### Get clean ubuntu 16 ###
 ```
 docker pull ubuntu:16.04
 docker run -it --name ub16 ubuntu:16.04 
 ```
 
-### input parameter to dockerfile ###
+### Input parameter to dockerfile ###
 Dockerfile:
 ```
 FROM ubuntu:16.04
@@ -25,13 +25,13 @@ docker build . -t docker_image_name \
 --build-arg HTTP_PROXY=http://x.x.x.x:8888/ \
 --build-arg HTTPS_PROXY=http://x.x.x.x:8888/
 
-### show CPU cores
+### Show CPU cores
 ```
 taskset -c -p $$
 pid 284307's current affinity list: 0-111
 ```
 
-### update run parameter
+### Update run parameter
 ```
 docker stop caffe
 docker update -c 512 caffe
@@ -39,13 +39,22 @@ docker start caffe
 ```
 
 ### List all containers (only IDs)
-docker ps -aq
+`docker ps -aq`
 
 ### Stop all running containers
-docker stop $(docker ps -aq)
+`docker stop $(docker ps -aq)`
 
 ### Remove all containers
-docker rm $(docker ps -aq)
+`docker rm $(docker ps -aq)`
 
 ### Remove all images
-docker rmi $(docker images -q)
+`docker rmi $(docker images -q)`
+
+### Export image to tar file
+```
+docker export demo > latest.tar
+```
+### Import tar file to local Image
+```
+docker import /path/to/image.tar.gz
+```
