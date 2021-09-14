@@ -52,8 +52,14 @@ docker start caffe
 
 ### Export image to tar file
 ```
+docker save demo > latest.tar
+```
+
+### Export container to tar file
+```
 docker export demo > latest.tar
 ```
+
 ### Import tar file to local Image
 ```
 docker import /path/to/image.tar.gz
