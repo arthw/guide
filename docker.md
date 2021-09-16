@@ -62,5 +62,5 @@ docker export demo > latest.tar
 
 ### Import tar file to local Image
 ```
-docker import /path/to/image.tar.gz
+docker import /path/to/image.tar.gz image
 ```
