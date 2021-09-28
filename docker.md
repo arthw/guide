@@ -11,7 +11,16 @@ Environment="HTTPS_PROXY=http://xxx.xxx.com:999/"
 docker pull ubuntu:16.04
 docker run -it --name ub16 ubuntu:16.04 
 ```
-
+### Run Docker without SUDO/root
+```
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker 
+```
+#### Test
+```
+docker run hello-world
+```
 ### Input parameter to dockerfile ###
 Dockerfile:
 ```
