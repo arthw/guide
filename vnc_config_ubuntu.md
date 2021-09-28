@@ -83,9 +83,18 @@ Download xfwm4_4.14.5-1_amd64.deb from https://launchpad.net/ubuntu/groovy/amd64
 ```
 wget http://launchpadlibrarian.net/494460182/xfwm4_4.14.5-1_amd64.deb
 sudo dpkg -i xfwm4_4.14.5-1_amd64.deb
+
 reboot
+or
+crate new VNC session
 ```
 
+### Install Chrome
+
+```
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+```
 ### set xfce terminal
 ```
 sudo update-alternatives --config x-terminal-emulator
