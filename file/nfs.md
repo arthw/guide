@@ -9,13 +9,18 @@ sudo apt install nfs-kernel-server
 ```
 mkdir /home/jianyuzh/share
 ```
+
+#### Add Access of nobody
+```
+sudo setfacl -m "u:nobody:rwx" /home/jianyuzh/share
+```
 #### Add Clients IP in Config
 
 x.x.0.0 is clients IP mask
 
 ```
 sudo vi /etc/exports
-/home/jianyuzh/share x.x.0.0/16(rw,sync,fsid=0,crossmnt,no_subtree_check)
+/home/jianyuzh/share x.x.0.0/16(rw,sync,fsid=0,crossmnt,no_subtree_check,all_squash)
 ```
 
 #### Restart NFS Server
