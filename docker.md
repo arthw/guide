@@ -32,7 +32,7 @@ Dockerfile:
 FROM ubuntu:16.04
 ENV http_proxy $HTTP_PROXY
 ENV https_proxy $HTTP_PROXY
-...
+
 ```
 
 docker build . -t docker_image_name \
