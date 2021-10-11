@@ -64,17 +64,18 @@ docker start caffe
 ### Remove all images
 `docker rmi $(docker images -q)`
 
-### Export image to tar file
+### Save image to tar file
 ```
 docker save demo > latest.tar
 ```
+### Load image from tar file
+docker load --input fedora.tar
 
 ### Export container to tar file
 ```
 docker export demo > latest.tar
 ```
-
-### Import tar file to local Image
+### Import container from tar file
 ```
 docker import /path/to/image.tar.gz image
 ```
