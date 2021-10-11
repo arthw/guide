@@ -69,7 +69,7 @@ docker start caffe
 docker save demo > latest.tar
 ```
 ### Load image from tar file
-docker load --input fedora.tar
+docker load --input latest.tar
 
 ### Export container to tar file
 ```
@@ -77,5 +77,5 @@ docker export demo > latest.tar
 ```
 ### Import container from tar file
 ```
-docker import /path/to/image.tar.gz image
+docker import latest.tar container_name
 ```
