@@ -33,3 +33,7 @@ Fetch the branches and their respective commits from the upstream repository. Co
     git checkout master
     git merge upstream/master
 ```
+
+
+### set client ssh key to git server
+cat ~/.ssh/id_rsa.pub | ssh git@nas "mkdir -p ~/.ssh && cat >>  ~/.ssh/authorized_keys"
