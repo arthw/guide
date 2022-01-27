@@ -37,3 +37,9 @@ Fetch the branches and their respective commits from the upstream repository. Co
 
 ### set client ssh key to git server
 cat ~/.ssh/id_rsa.pub | ssh git@nas "mkdir -p ~/.ssh && cat >>  ~/.ssh/authorized_keys"
+
+### remove big file in history
+
+```
+git filter-branch --tree-filter 'rm -f *.iso' HEAD
+```
