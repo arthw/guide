@@ -34,7 +34,7 @@ nautilus &
 
 ### startup vncserver
 
-`vncserver -localhost no -geometry 1400x768`
+`vncserver -localhost no -geometry 1366x768`
 
 ### Start up vncserver in reboot
 
@@ -47,6 +47,13 @@ Add
 ### Install xfce4
 ```
 sudo apt install xfce4 xfce4-goodies autocutsel xfce4-terminal xfonts-100dpi xfonts-75dpi
+```
+
+### Install Xfce 4.16 in Ubuntu 20.04 (no need follow patch)
+```
+sudo add-apt-repository ppa:xubuntu-dev/staging
+sudo apt update
+sudo apt upgrade
 ```
 
 ### Startup xfce4 in vncserver
