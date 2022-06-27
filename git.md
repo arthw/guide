@@ -44,3 +44,26 @@ cat ~/.ssh/id_rsa.pub | ssh git@nas "mkdir -p ~/.ssh && cat >>  ~/.ssh/authorize
 cd project
 git filter-branch --index-filter 'git rm --cached --ignore-unmatch *.iso' HEAD
 ```
+
+
+### Create git repo in local git server
+
+```
+cd /srv/git
+mkdir project.git
+cd project.git
+git init --bare
+```
+
+### Set repo in remote client
+
+```
+cd project
+
+git remote add origin root@server:/git/project.git
+or
+git remote add origin /git/project.git
+
+git push --set-upstream origin master
+git pull
+```
