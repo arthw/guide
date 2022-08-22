@@ -1,5 +1,17 @@
-### jupyter use conda env ###
+### Jupyter use conda env ###
+
+1.
+```
 conda install nb_conda_kernels
+```
+
+2.
+```
+conda create -n my_env
+conda activate my_env
+conda install -c anaconda ipykernel
+python -m ipykernel install --user --name=my_env
+```
 
 ### two data in one figure 
 
