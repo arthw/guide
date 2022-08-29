@@ -10,7 +10,12 @@ conda install nb_conda_kernels
 conda create -n my_env
 conda activate my_env
 conda install -c anaconda ipykernel
+
+python -m venv my_env
+
 python -m ipykernel install --user --name=my_env
+
+jupyter-kernelspec uninstall venv
 ```
 
 ### two data in one figure 
