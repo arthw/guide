@@ -79,3 +79,8 @@ docker export demo > latest.tar
 ```
 docker import latest.tar container_name
 ```
+### Commit container to image
+
+```
+sudo docker commit deddd39fa163 ubuntu-nmap
+```
