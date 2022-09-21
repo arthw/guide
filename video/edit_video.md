@@ -2,7 +2,7 @@ cut by time
 
 // -ss begin time;  -t end time
 
-`ffmpeg -ss 00:00:03.0 -i input.wmv -c copy -t 00:00:13.0 output.wmv`
+`ffmpeg -ss 00:00:03.0 -i input.wmv -c copy -to 00:00:13.0 output.wmv`
 
 cut by new size
 
