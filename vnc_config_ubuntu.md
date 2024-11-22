@@ -51,7 +51,7 @@ sudo apt install xfce4 xfce4-goodies autocutsel xfce4-terminal xfonts-100dpi xfo
 
 ### Install tightvncserver
 ```
-sudo apt install tightvncserver
+sudo apt install tightvncserver autocutsel
 ```
 
 
