@@ -24,3 +24,9 @@ ollama  run smollm:135m
 ```
 tail -rf  /var/log/syslog
 ```
+
+## Windows building
+
+install gcc by: https://github.com/skeeto/w64devkit/releases/download/v1.22.0/w64devkit-1.22.0.zip
+add the **bin** in $PATH.
+
