@@ -1,7 +1,7 @@
 ### Set proxy in docker
 ```
 sudo mkdir -p /etc/systemd/system/docker.service.d
-vi /etc/systemd/system/docker.service.d/proxy.conf
+sudo vi /etc/systemd/system/docker.service.d/proxy.conf
 
 [Service]
 Environment="HTTP_PROXY=http://myproxy.hostname:8080"
