@@ -18,4 +18,6 @@ export CMAKE_PREFIX_PATH=/home/xxx/miniforge3/envs/build_torch
 source /opt/intel/oneapi/setvars.sh 
 python -m pip install --no-build-isolation -v -e .
 
+or
+clear && time python -m pip install build .
 ```
