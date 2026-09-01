@@ -1,3 +1,9 @@
+## Automatic startup VNC Server
+```
+crontab -e
+reboot USER=xxx /usr/bin/vncserver :1 2>&1 | tee > /tmp/vnc.log
+```
+
 ### Set automatic startup VNC sessoin :1
 ```
 sudo vi /etc/init.d/vnc
